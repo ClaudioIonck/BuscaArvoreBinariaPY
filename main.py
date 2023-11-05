@@ -34,7 +34,7 @@ def somaIntervaloBusca(raiz, inicial, final):
 
 # Implementacao da interface
 
-valores = list(map(int, input("Digite os valores da arvores sepadados por espacos: ").split()))
+valores = list(map(int, input("Digite os valores da arvore sepadados por espacos: ").split()))
 
 raiz = construirBusca(valores)
 
