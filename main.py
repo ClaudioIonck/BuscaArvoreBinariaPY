@@ -32,6 +32,23 @@ def somaIntervaloBusca(raiz, inicial, final):
 
     return BuscaemProfundidade(raiz)
 
+# Implementacao da interface
+
+valores = list(map(int, input("Digite os valores da arvores sepadados por espacos: ").split()))
+
+raiz = construirBusca(valores)
+
+inicial = int(input("Digite o valor inicial do intervalo: "))
+
+final = int(input("Digite o valor final do intervalo: "))
+
+resultado = somaIntervaloBusca(raiz, inicial, final)
+
+print("A soma dos valores no intervalo [{}, {}] eh {}".format(inicial, final, resultado))
+
+
+
+'''
 # Exemplo de uso:
 valores = [10,5,15,3,7,18]
 raiz = construirBusca(valores)
@@ -40,7 +57,7 @@ inicial = 7
 final = 15
 resultado = somaIntervaloBusca(raiz, inicial, final)
 print(resultado)
-
+'''
 
 
 
